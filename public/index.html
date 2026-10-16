@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AutoMarket — автокөлік сатып алу және сату сайты">
+  <title>AutoMarket — автокөлік нарығы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#"><span class="logo-icon">A</span> Auto<span>Market</span></a>
+  <button class="menu-button" id="menuButton" aria-label="Мәзір">☰</button>
+  <nav id="nav">
+    <a href="#home">Басты бет</a><a href="#cars">Көліктер</a><a href="#about">Біз туралы</a><a href="#contact">Байланыс</a>
+  </nav>
+  <a class="header-button" href="#add-car">+ Көлік сату</a>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow"><span></span> СЕНІҢ КЕЛЕСІ КӨЛІГІҢ ОСЫНДА</div>
+    <h1>Армандаған көлігіңді <span>тап.</span></h1>
+    <p>Қазақстан бойынша автокөліктерді ізде. Салыстыр. Өзіңе лайықтысын таңда.</p>
+    <a class="primary-button" href="#cars">Көліктерді қарау <span>↗</span></a>
+    <div class="hero-stats"><div><strong>1 200+</strong><small>Хабарландыру</small></div><div><strong>24/7</strong><small>Іздеу мүмкіндігі</small></div><div><strong>17 қала</strong><small>Қазақстан бойынша</small></div></div>
+  </div>
+  <div class="hero-image"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1500&q=85" alt="Спорттық автокөлік"><div class="image-tag"><span class="tag-dot"></span> Жаңа мүмкіндіктер</div></div>
+</section>
+
+<section class="catalog section" id="cars">
+  <div class="section-heading"><div><div class="eyebrow">СЕН ҮШІН ТАҢДАЛҒАН</div><h2>Танымал көліктер</h2></div><span class="muted" id="carCount">Көліктер жүктелуде...</span></div>
+  <div class="filters">
+    <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Марка, модель немесе қала..."></label>
+    <select id="brandFilter" aria-label="Марка бойынша сүзгі"><option value="">Барлық маркалар</option></select>
+    <button class="outline-button" id="resetFilters">Тазалау ↺</button>
+  </div>
+  <div class="car-grid" id="carGrid"><div class="loading">Көліктер жүктелуде...</div></div>
+</section>
+
+<section class="sell-banner" id="add-car">
+  <div><div class="eyebrow">КӨЛІГІҢДІ САТУ ОҢАЙ</div><h2>Көлігіңді сатқың келе ме?</h2><p>Ақпаратты толтыр — хабарландыруды бірден тізімге қосамыз.</p></div>
+  <button class="primary-button" id="openAddForm">Хабарландыру қосу <span>↗</span></button>
+</section>
+
+<section class="add-section hidden" id="addSection">
+  <div class="section-heading"><div><div class="eyebrow">ЖАҢА ХАБАРЛАНДЫРУ</div><h2>Көлік туралы мәлімет</h2></div><button class="icon-button" id="closeAddForm" aria-label="Жабу">✕</button></div>
+  <form id="addCarForm" class="form-grid">
+    <label>Маркасы *<input name="brand" required placeholder="Toyota"></label>
+    <label>Моделі *<input name="model" required placeholder="Camry"></label>
+    <label>Шыққан жылы *<input name="year" type="number" min="1980" max="2026" required placeholder="2022"></label>
+    <label>Бағасы (₸) *<input name="price" type="number" min="1" required placeholder="15000000"></label>
+    <label>Жүрісі (км)<input name="mileage" type="number" min="0" placeholder="45000"></label>
+    <label>Қала *<input name="city" required placeholder="Астана"></label>
+    <label class="full">Сурет сілтемесі<input name="image" type="url" placeholder="https://..."></label>
+    <label class="full">Қосымша ақпарат<textarea name="description" rows="3" placeholder="Көліктің жағдайы туралы..."></textarea></label>
+    <div class="full form-actions"><button class="primary-button" type="submit">Хабарландыруды жариялау ↗</button><p id="formMessage" role="status"></p></div>
+  </form>
+</section>
+
+<section class="about section" id="about"><div class="eyebrow">НЕГЕ AUTOMARKET?</div><h2>Көлік таңдау енді оңай</h2><div class="benefit-grid"><article><span>⌕</span><h3>Оңай іздеу</h3><p>Маркасы мен моделі бойынша керекті көлікті тап.</p></article><article><span>₸</span><h3>Ашық бағалар</h3><p>Көліктің бағасы мен сипаттамаларын бір жерден көр.</p></article><article><span>↗</span><h3>Жылдам жариялау</h3><p>Өз көлігің туралы мәліметті қосып, тізімге шығар.</p></article></div></section>
+<section class="contact section" id="contact"><div><div class="eyebrow">БАЙЛАНЫС</div><h2>Сұрағың бар ма?</h2><p>Бізге хабарлама қалдыр — саған жауап беруге дайынбыз.</p></div><form id="contactForm" class="contact-form"><input name="name" required placeholder="Атың"><input name="email" type="email" required placeholder="Email"><textarea name="message" required placeholder="Хабарламаң..." rows="3"></textarea><button class="primary-button" type="submit">Жіберу ↗</button><p id="contactMessage" role="status"></p></form></section>
+</main>
+
+<footer><a class="logo" href="#"><span class="logo-icon">A</span> Auto<span>Market</span></a><p>© 2026 AutoMarket. Оқу жобасы.</p><a href="#home">Жоғары ↑</a></footer>
+<div class="toast" id="toast" role="status"></div>
+<div class="modal hidden" id="carModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Жабу">✕</button><div id="modalContent"></div></div></div>
+<script src="js/main.js"></script>
+</body>
+</html>

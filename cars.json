@@ -1,0 +1,8 @@
+[
+  {"id":1,"brand":"Toyota","model":"Camry 70","year":2021,"price":14500000,"mileage":52000,"city":"Астана","image":"https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=1200&q=80","description":"Жақсы жағдайда, техникалық қызметі уақытында жасалған."},
+  {"id":2,"brand":"BMW","model":"5 Series","year":2020,"price":18900000,"mileage":61000,"city":"Алматы","image":"https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80","description":"Ыңғайлы әрі қуатты седан."},
+  {"id":3,"brand":"Hyundai","model":"Tucson","year":2022,"price":16200000,"mileage":38000,"city":"Қарағанды","image":"https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1200&q=80","description":"Отбасылық сапарға арналған кең кроссовер."},
+  {"id":4,"brand":"Mercedes-Benz","model":"E-Class","year":2019,"price":20500000,"mileage":74000,"city":"Шымкент","image":"https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80","description":"Премиум санаттағы жайлы көлік."},
+  {"id":5,"brand":"Kia","model":"Sportage","year":2023,"price":17400000,"mileage":25000,"city":"Астана","image":"https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80","description":"Жүрісі аз, жаңа модель."},
+  {"id":6,"brand":"Lexus","model":"RX 350","year":2018,"price":19800000,"mileage":89000,"city":"Алматы","image":"https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&q=80","description":"Сенімді әрі жайлы кроссовер."}
+]
